@@ -297,13 +297,20 @@ export default function Home() {
           </h2>
           <div className="team-grid">
             {[
-              { name: 'Team Member 1', role: 'Lead Developer', bio: 'Full-stack developer with expertise in AI/ML integration', image: '/team/team1.jpg' },
-              { name: 'Team Member 2', role: 'UI/UX Designer', bio: 'Creative designer focused on user experience and modern interfaces', image: '/team/team2.jpg' },
-              { name: 'Team Member 3', role: 'Product Manager', bio: 'Strategic thinker driving product vision and roadmap', image: '/team/team3.jpg' },
-              { name: 'Team Member 4', role: 'AI/ML Engineer', bio: 'Specializes in natural language processing and machine learning models', image: '/team/team4.jpg' },
-              { name: 'Team Member 5', role: 'Backend Developer', bio: 'Expert in scalable server architecture and API development', image: '/team/team5.jpg' },
-              { name: 'Team Member 6', role: 'Frontend Developer', bio: 'Passionate about creating responsive and interactive user interfaces', image: '/team/team6.jpg' },
-              { name: 'Team Member 7', role: 'DevOps Engineer', bio: 'Ensures smooth deployment and infrastructure management', image: '/team/team7.jpg' }
+             { name: 'Siddhi Patel', role: 'Project Manager', bio: 'Leads project planning, execution, and cross-team coordination to ensure timely delivery.', image: '/team/team1.jpg' },
+
+             { name: 'Nidhi Patel', role: 'Technical Lead', bio: 'Oversees technical direction and architecture while guiding developers toward scalable solutions.', image: '/team/team2.jpg' },
+             
+             { name: 'Sachin Tiwari', role: 'Backend Developer', bio: 'Builds robust server-side systems and optimized APIs for secure and high-performance applications.', image: '/team/team3.jpg' },
+             
+             { name: 'Utsav Khamar', role: 'AI/ML Engineer', bio: 'Designs and deploys machine learning models with a focus on NLP and intelligent automation.', image: '/team/team4.jpg' },
+             
+             { name: 'Advait Pandit', role: 'Computer Vision Engineer', bio: 'Develops computer vision pipelines and image-processing systems for real-world applications.', image: '/team/team5.jpg' },
+             
+             { name: 'Mansi Sutreja', role: 'MPL Engineer', bio: 'Works on model performance, optimization, and production-ready ML pipelines.', image: '/team/team6.jpg' },
+             
+             { name: 'Jatin Sachdeva', role: 'UI-UX Developer', bio: 'Crafts intuitive user experiences with modern, responsive interface designs.', image: '/team/team7.jpg' }
+             
             ].map((member, idx) => (
               <div
                 key={idx}
