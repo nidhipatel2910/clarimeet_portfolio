@@ -12,6 +12,13 @@ export default function Home() {
     setIsVisible(true)
   }, [])
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     alert('Thank you for your message! We will get back to you soon.')
@@ -66,8 +73,12 @@ export default function Home() {
               Transform lengthy conversations into clear, concise summaries and actionable insights
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <button className="btn-primary">Get Started</button>
-              <button className="btn-secondary">Learn More</button>
+              <button className="btn-primary" onClick={() => scrollToSection('contact')}>
+                Get Started
+              </button>
+              <button className="btn-secondary" onClick={() => scrollToSection('features')}>
+                Learn More
+              </button>
             </div>
           </div>
         </div>
