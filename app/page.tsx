@@ -256,21 +256,23 @@ export default function Home() {
               { title: 'Action Items Panel', desc: 'Organized action items with status tracking and assignments', image: '/ui/action-items.jpg' },
               { title: 'Meeting History', desc: 'Search and filter through all your past meeting summaries', image: '/ui/history.jpg' }
             ].map((mockup, idx) => (
-              <div key={idx} className="glass-card p-8 hover:scale-105 transition-transform duration-300">
+              <div key={idx} className="glass-card p-6 hover:scale-105 transition-transform duration-300">
                 <div 
-                  className="aspect-video rounded-lg mb-4 flex items-center justify-center overflow-hidden glass-card"
+                  className="rounded-lg mb-4 flex items-center justify-center overflow-hidden glass-card"
                   style={{
                     background: 'rgba(255, 255, 255, 0.08)',
-                    border: '1px solid rgba(139, 92, 246, 0.3)'
+                    border: '1px solid rgba(139, 92, 246, 0.3)',
+                    maxHeight: '300px',
+                    aspectRatio: '16/9'
                   }}
                 >
                   {mockup.image ? (
                     <Image
                       src={mockup.image}
                       alt={mockup.title}
-                      width={800}
-                      height={450}
-                      className="w-full h-full object-cover"
+                      width={600}
+                      height={338}
+                      className="w-full h-full object-contain"
                     />
                   ) : (
                     <div className="text-center">
@@ -279,8 +281,8 @@ export default function Home() {
                     </div>
                   )}
                 </div>
-                <h3 className="text-2xl font-semibold text-white mb-2">{mockup.title}</h3>
-                <p className="text-white/80">{mockup.desc}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{mockup.title}</h3>
+                <p className="text-white/80 text-sm">{mockup.desc}</p>
               </div>
             ))}
           </div>
