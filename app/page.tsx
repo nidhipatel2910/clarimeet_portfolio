@@ -316,7 +316,7 @@ export default function Home() {
              
              { name: 'Utsav Khamar', role: 'AI/ML Engineer', bio: 'Designs and deploys machine learning models with a focus on NLP and intelligent automation.', image: '/team/team4.jpg' },
              
-             { name: 'Mansi Sutreja', role: 'MPL Engineer', bio: 'Works on model performance, optimization, and production-ready ML pipelines.', image: '/team/team5.jpg' },
+             { name: 'Mansi Sutreja', role: 'MLP Engineer', bio: 'Works on model performance, optimization, and production-ready ML pipelines.', image: '/team/team5.jpg' },
              
              { name: 'Advait Pandit', role: 'Computer Vision Engineer', bio: 'Develops computer vision pipelines and image-processing systems for real-world applications.', image: '/team/team6.jpg' },
              
